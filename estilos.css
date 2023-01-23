@@ -1,0 +1,372 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}body {
+    background-color: #aab8c4;
+}
+
+header{
+    display: flex;  
+    justify-content: space-around;  
+    align-items: center;
+    border-bottom: 5px solid #dd6311;
+    /* padding: 0 50px 0 50px; */
+    
+}
+
+header h1{
+    text-align: end;
+    font-size: 55px;
+    margin: 20px;
+    color: rgb(90, 100, 110);
+}
+
+header img {
+    max-width: 100px;
+    margin: 20px;
+    
+}
+
+nav ul li {
+    padding: 10px;
+    padding-left: 50px;
+    
+}
+
+nav ul li a{
+    color: rgb(180, 180, 214);
+    
+}
+
+nav ul li a:hover {
+    color: #dd6311;;
+    text-decoration:underline;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.listamenu {
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    background-color: rgb(55, 78, 97);
+    border: 1px ridge rgb(131, 133, 153);
+    font-size: 20px;
+}
+
+.enunciado {
+    
+    width: 80%;
+    padding: 50px;
+    background-color:#ccbcb2;
+    
+}
+
+.enunciado h3 {
+    text-align: center; 
+    font-size: 35px;
+    color: rgb(76, 80, 87);
+}
+
+.enunciado p {
+    text-align: justify;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.enunciado span{
+    text-decoration: underline;
+}
+
+.ordem {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.ordem li {
+    margin: 15px;
+    width: 233px;
+    counter-increment: num-list;
+    margin-bottom: 10px;
+    font-size: 18px;
+} 
+
+.ordem li::before {
+    content: counter(num-list);
+    margin-right: 2px;
+    font-size: 85%;
+    background-color:#dd6311;
+    color: #ccbcb2;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+  }
+
+a {
+    text-decoration: none;
+}
+
+#divMaisInfo {
+    display: flex;
+    justify-content: center;
+}
+
+#maisinfo {
+    padding-top: 50px;
+    width: 200px;
+    cursor: pointer;
+    justify-content: center;
+    animation: blink 800ms steps(5, start) infinite;
+    transition: 300ms;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.active{
+    display: block !important;
+}
+
+.animationOff {
+    animation: none !important;
+}
+
+#sobre {
+    background-color: #ccbcb2;;
+    padding: 20px;
+    width: 80%;
+}
+
+.listaCachorros {
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid #858f97f3;
+    border-radius: 30px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+    box-shadow: 1px 1px 5px 1px rgb(0, 0, 0);
+}
+
+.listaCachorros img {
+    max-width: 100%;
+    padding: 30px;    
+}
+
+.listaCachorros h1 {
+    color:#4e4743;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.listaCachorros ul {    
+    padding-left: 80px;
+    padding-bottom: 25px;
+}
+
+.listaCachorros li {
+    margin: 8px;
+}
+
+.listaCachorros span {
+    padding-left: 80px;
+}
+
+.listaCachorros span a {
+    color:#5c2a0e;
+}
+
+.listaCachorros span a:hover {
+    color: #dd6311;;
+    text-decoration:underline;
+}
+
+
+.form {
+    text-align: center;
+    background-color: #ccbcb2;
+    padding: 15px;
+    
+}
+
+.form p{
+    font-size: 25px;
+    color: #4e4743;
+    padding: 10px;
+}
+
+fieldset {
+    border: 2px solid #5c2a0e;
+    padding: 8px 70px 8px 70px;
+    max-width: 500px;
+}
+
+#campos {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#email {
+    margin: 15px;
+    padding: 8px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 2px solid #5c2a0e;
+}
+
+button{
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 2px solid #5c2a0e;
+    color: #5c2a0e;
+}
+
+button:hover {
+    background-color: #91867d;
+}
+
+@media only screen and (max-width:900px) {
+    .listaCachorros {
+        padding: 10px;
+        margin: 20px auto;
+        max-width: 100%;
+
+    }
+    
+    .listaCachorros img {
+        max-width:50%;
+        max-height:50%;
+        width: auto;
+        height: auto;  
+    }
+    
+    .listaCachorros h1 {
+        font-size: 20px;
+    
+    }
+    
+    .listaCachorros ul {    
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    .listaCachorros span {
+        padding-left: 40px;
+    }
+    
+}
+
+@media only screen and (max-width:670px) {
+
+    header h1{
+        font-size: 26px;
+        margin: 10px;
+      
+    }
+    
+    header img {
+        max-width: 50px;
+        margin: 20px;
+        
+    }
+    
+    nav ul li {
+        padding-left: 20px;
+        font-size: 20px;
+        
+    }
+    
+    .enunciado{
+        width: 95%;
+    }
+    
+    .enunciado h3 {
+        font-size: 20px;
+    }
+    
+    .enunciado p {
+        padding: 7px;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .ordem {
+        margin-left: 10px;
+        list-style-type: none;
+    }
+    
+    .ordem li {
+        font-size: 12px;
+    } 
+    #maisinfo {
+        padding-top: 25px;
+        width: 130px;
+    }
+    
+    #sobre {
+        padding: 10px;
+        width: 95%;
+    }  
+    .listaCachorros {
+        padding: 10px;
+        margin: 20px auto;
+        max-width: 100%;
+
+    }
+    
+    .listaCachorros img {
+        padding: 0px;
+       
+    }
+    
+    .listaCachorros h1 {
+        font-size: 15px;
+    
+    }
+    
+    .listaCachorros ul {    
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    .listaCachorros span {
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    .form p{
+        font-size: 15px;
+    }
+    
+    fieldset {
+        font-size: 13px;
+    }
+    #email {
+        width: 200px;
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+    button{
+        font-size: 12px;
+        padding: 5px;
+    
+    }
+   
+}

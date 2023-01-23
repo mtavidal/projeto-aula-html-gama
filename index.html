@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <title> Página Exercício HTML | Gama Academy</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Texto descritivo da página web" />
+        <meta name="author" content="Gama Academy" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="estilos.css" />
+        
+        <script type="text/javascript" src="script.js"></script>
+
+    </head>
+    <body>
+        <header role="banner">
+            <img src="logo-osso.png" alt="Logo da Empresa" title="Logo da Empresa"/>
+            <h1> Portal Canino</h1>
+            <img src="logo-osso.png" alt="Logo da Empresa" title="Logo da Empresa"/>
+        </header>
+
+        <main role="main">
+            
+            <nav role="navigation" aria-level="main navigation">
+                <ul role="menu" class="listamenu">
+                    <li>
+                        <a href="index.html" role="menuitem">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mtavidal" role="menuitem">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/manuela-vidal/" role="menuitem">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+                <div class="enunciado">
+                    <div id="divh3">
+                        <h3>
+                            Conheça as 10 raças de cães mais populares no Brasil!
+                        </h3>
+                    </div>
+                     <p>
+                        Saiba quais são as raças de cães mais presentes nos lares brasileiros, suas principais características e necessidades específicas.
+                        A relação entre o cão e o homem existe desde tempos remotos e, não à toa, a população canina no Brasil atualmente é de cerca de 55,1 milhões.
+                        Além disso, o registro de cães de raça definida cresce a cada dia. Confira abaixo as <span>10 raças de cães</span>  mais populares no país!
+                     </p>
+                    <ol class="ordem">
+                        <li>Pomerânia (Spitz Alemão)</li>
+                        <li>Bulldog Francês</li>
+                        <li>Shih Tzu</li>
+                        <li>Rottweiler</li>
+                        <li>Pug</li>
+                        <li>Golden Retriever</li>
+                        <li>Pastor Alemão</li>
+                        <li>Yorkshire Terrier</li>
+                        <li>Border Collie</li>
+                        <li>SRD (Sem Raça Definida)</li>
+                    </ol>
+                    <div id="divMaisInfo">
+                        <div onclick="displayAbout()">
+                            <img id="maisinfo" src="maisInfo.png" alt="Mais info">
+                        </div>
+                    </div>
+                </div> 
+                <div style="display: none" id="sobre">
+                    <div class="listaCachorros" id="div1">
+                        <div>
+                            <h1> Pomerânia (Spitz Alemão)</h1>
+                            <ul>
+                                <li>Corpo pequeno e compacto.</li>
+                                <li> Silhueta delicada e elegante. </li>
+                                <li>Pelagem abundante e arejadas.</li>
+                                <li>Sensibilidade de ossos e articulações.</li>
+                                <li> Menor tempo de trânsito gastrointestinal.</li>
+                                <li> Baixa fermentação colônica.</li>
+                                <li> Predisposição ao cálculo dental.</li>
+                            </ul>
+                            <span> Para saber mais: <a href="https://pt.wikipedia.org/wiki/Zwergspitz" title="aprender mais" target="_blank">clique aqui</a>!</span>
+                        </div>
+                        <img width="300" src="imagens_caes/pomerania.png" 
+                        alt="Foto  Pomerânia (Spitz Alemão)" title="Foto  Pomerânia (Spitz Alemão)" />
+                    </div>
+                    <div class="listaCachorros" id="div2">
+                        <div>
+                            <h1>Bulldog Francês</h1>
+                            <ul>
+                                <li>Divertidos, inteligentes, amigáveis.</li>
+                                <li>Carismáticos, sociáveis e muito companheiros.</li>
+                                <li>Estrutura corporal compacta.</li>
+                                <li>Robusto, forte e musculoso.</li>
+                                <li>Anatomia braquicefálica.</li>
+                                <li>Sensibilidade digestiva.</li>
+                                <li>Apetite caprichoso.</li>
+                            </ul>
+                            <span> Para saber mais: <a href="https://pt.wikipedia.org/wiki/Buldogue_franc%C3%AAs" title="aprender mais" target="_blank">clique aqui</a>!</span>
+                        </div>
+                        <img width="270" src="imagens_caes/buldog.png" 
+                        alt="Foto Bulldog Francês" title="Foto Bulldog Francês" />
+                    </div>
+                    <div class="listaCachorros" id="div3">
+                        <div>
+                            <h1>Shih Tzu</h1>
+                            <ul>
+                                <li>Calmo, porém ativo, dócil, divertido e sociável.</li>
+                                <li>Alta expectativa de vida.</li>
+                                <li>Ideal para companhia.</li>
+                                <li>Tendência ao ganho de peso.</li>
+                                <li>Predisposição ao cálculo dental.</li>
+                                <li>Maior probabilidade de urolitíases.</li>
+                                <li>Sensibilidade cutânea.</li>
+                                <li>Apetite exigente.</li>
+                            </ul>
+                            <span> Para saber mais: <a href="https://pt.wikipedia.org/wiki/Shih-tzu" title="aprender mais" target="_blank">clique aqui</a>!</span>
+                        </div>
+                        <img width="400" src="imagens_caes/ShihTzu.png" 
+                        alt="Foto Shih Tzu" title="Foto Shih Tzu" />    
+                    </div>
+                    <div class="listaCachorros" id="div4">
+                        <div>
+                            <h1>Rottweiler</h1>
+                            <ul>
+                                <li>Temperamento forte e dominador.</li>
+                                <li>Estrutura corporal robusta e musculosa.</li>
+                                <li>Necessidade de espaço para praticar atividades físicas.</li>
+                                <li>Sensibilidade osteoarticular.</li>
+                                <li>Predisposição a doenças cardíacas.</li>
+                                <li>Necessitam receber dieta com alta energia.</li>
+                            </ul>
+                            <span> Para saber mais: <a href="https://pt.wikipedia.org/wiki/Rottweiler" title="aprender mais" target="_blank">clique aqui</a>!</span>
+                        </div>
+                        <img width="250" src="imagens_caes/Rottweiler.png" 
+                        alt="Foto Rottweiler" title="Foto Rottweiler" />
+                    </div>
+                    <div class="listaCachorros" id="div5">
+                        <div>
+                            <h1>Pug</h1>
+                            <ul>
+                                <li>Sensíveis, afetuosos e companheiros.</li>
+                                <li>Braquicefálicos.</li>
+                                <li>Corpo compacto e musculoso.</li>
+                                <li>Baixa tolerância a exercícios físicos.</li>
+                                <li>Tendência ao ganho de peso.</li>
+                                <li>Sensibilidade digestiva.</li>
+                                <li>Lábio superior bastante espesso.</li>
+                            </ul>
+                            <span> Para saber mais: <a href="https://pt.wikipedia.org/wiki/Pug" title="aprender mais" target="_blank">clique aqui</a>!</span>
+                        </div>
+                        <img width="350" src="imagens_caes/Pug.png" 
+                        alt="Foto Pug" title="Foto Pug" />
+                    </div>
+                    <div class="listaCachorros" id="div6">
+                        <div>
+                            <h1>Golden Retriever</h1>
+                            <ul>
+                                <li>Porte grande, dóceis, brincalhões.</li>
+                                <li>Leais e muito apegados ao tutor dono.</li>
+                                <li>Menos ativos do que outros cães de grande porte.</li>
+                                <li>Predisposição ao ganho de peso.</li>
+                                <li>Espessa subcamada de pêlos.</li>
+                                <li>Predisposição a dermatopatias.</li>
+                                <li>Tendência a desenvolver cardiomiopatias.</li>
+                                <li>Ossos e articulações sensíveis.</li>
+                            </ul>
+                            <span> Para saber mais: <a href="https://pt.wikipedia.org/wiki/Golden_retriever" title="aprender mais" target="_blank">clique aqui</a>!</span>
+                        </div>
+                        <img width="270"  src="imagens_caes/GoldenRetriever.png" 
+                        alt="Foto Golden Retriever" title="Foto Golden Retriever" />
+                    </div>
+                    <div class="listaCachorros" id="div7">
+                        <div>
+                            <h1>Pastor Alemão</h1>
+                            <ul>
+                                <li>Animais de pastoreio e guarda.</li>
+                                <li>Fortes, ágeis, vigilantes, inteligentes, fiéis e obedientes.</li>
+                                <li>Cão esportivo que necessita de espaço.</li>
+                                <li>Alta acuidade olfativa.</li>
+                                <li>Estrutura corporal elegante.</li>
+                                <li>Fragilidade cutânea.</li>
+                                <li>Sensibilidade digestiva.</li>
+                                <li>Ossos e articulações delicados.</li>
+                            </ul>
+                            <span> Para saber mais: <a href="https://pt.wikipedia.org/wiki/Pastor-alem%C3%A3o" title="aprender mais" target="_blank">clique aqui</a>!</span>
+                        </div>
+                        <img width="300" src="imagens_caes/PastorAlemao.png" 
+                        alt="Foto Pastor Alemão" title="Foto Pastor Alemão" />
+                    </div>
+                    <div class="listaCachorros" id="div8">
+                        <div>
+                            <h1>Yorkshire Terrier</h1>
+                            <ul>
+                                <li>Ativos, repletos de vida, afetuosos e corajosos.</li>
+                                <li>Seu temperamento esportivo requer exercícios.</li>
+                                <li>Magnífica pelagem longa, lisa, fina e sedosa.</li>
+                                <li>Ausência de camada de sub-pelos.</li>
+                                <li>Alta expectativa de vida.</li>
+                                <li>Tendência às doenças periodontais.</li>
+                            </ul>
+                            <span> Para saber mais: <a href="https://pt.wikipedia.org/wiki/Yorkshire_terrier" title="aprender mais" target="_blank">clique aqui</a>!</span>
+                        </div>
+                            <img width="350" src="imagens_caes/YorkshireTerrier.jpg" 
+                        alt="Foto Yorkshire Terrier" title="Foto Yorkshire Terrier" />
+                       
+                    </div>
+                    <div class="listaCachorros" id="div9">
+                        <div>
+                            <h1>Border Collie</h1>
+                            <ul>
+                                <li>Elegantes, ágeis, ativos e vigorosos.</li>
+                                <li>Inteligentes e obedientes.</li>
+                                <li>Cães de pastoreio e de atividades de agility.</li>
+                                <li>Alta atividade física.</li>
+                                <li>Predisposição a sensibilidades digestivas.</li>
+                                <li>Sensibilidade de ossos e articulações.</li>
+                            </ul>
+                            <span> Para saber mais: <a href="https://pt.wikipedia.org/wiki/Border_collie" title="aprender mais" target="_blank">clique aqui</a>!</span>
+                        </div>
+                        <img width="300" src="imagens_caes/BorderCollie.png" 
+                        alt="Foto Border Collie" title="Foto Border Collie" />
+                    </div>
+                    <div class="listaCachorros" id="div10">
+                        <div>
+                            <h1>SRD (Sem Raça Definida)</h1>
+                            <ul>
+                                <li>Compreendem grande parte da população canina no Brasil.</li>
+                                <li>Nascem do cruzamento entre raças diferentes.</li>
+                                <li>Podem ser de porte pequeno, médio ou grande.</li>
+                                <li>Apresentar variações no que diz respeito a: temperamento, comportamento e sociabilidade</li>
+                            </ul>
+                            <span> Para saber mais: <a href="https://pt.wikipedia.org/wiki/Vira-lata" title="aprender mais" target="_blank">clique aqui</a>!</span>
+                        </div>
+                        <img width="350" src="imagens_caes/viraLata.png" 
+                        alt="Foto  SRD (Sem Raça Definida)" title="Foto  SRD (Sem Raça Definida)" />
+                    </div>
+                    <div class="form">
+                        <div>
+                            <p>Deixe seu contato para receber mais informações!</p>
+                        </div>
+        
+                        <form action="">
+                            <div id="campos">
+                                <fieldset>
+                                    <legend> Selecione seus interesses:  </legend>
+                                    <label for="campo1">Produtos e PetShop</label>
+                                    <input type="checkbox" name="interesse" value="1" id="campo1" />
+                                    <label for="campo2"><br/>Saúde Pet </label>
+                                    <input type="checkbox" name="interesse" value="2" id="campo2"/>
+                                    <label for="campo2"><br/>Curiosidades</label>
+                                    <input type="checkbox" name="interesse" value="2" id="campo2"/>
+                                </fieldset>
+                            </div>
+                            <input type="text" id="email" placeholder="Email :)">
+                            <button>Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            
+
+        </main>
+
+        <footer role="contentinfo">
+            &copy;
+        </footer>
+
+      
+
+    </body>
+</html>
