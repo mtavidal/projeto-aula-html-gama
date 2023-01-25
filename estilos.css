@@ -244,6 +244,13 @@ button:hover {
     background-color: #91867d;
 }
 
+footer{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
 @media only screen and (max-width:900px) {
     .listaCachorros {
         padding: 10px;
@@ -367,6 +374,10 @@ button:hover {
         font-size: 12px;
         padding: 5px;
     
+    }
+    footer{
+        padding-top: 10px;
+        margin-bottom: 20px;
     }
    
 }

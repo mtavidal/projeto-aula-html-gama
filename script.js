@@ -1,4 +1,4 @@
-alert("Bem Vindo ao Portal Canino")
+// alert("Bem Vindo ao Portal Canino")
 
 function displayAbout(){
     var maisInfo = document.getElementById('maisinfo');
